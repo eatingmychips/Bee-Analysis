@@ -2,13 +2,13 @@ import pandas as pd
 import numpy as np
 
 #Path to control and treatment trajectory files 
-controls = [r"C:\Users\lachl\OneDrive\Thesis\Collaboration\Analysis\data\session_Control4thRun1\trajectories\with_gaps_csv\trajectories.csv", 
-            r"C:\Users\lachl\OneDrive\Thesis\Collaboration\Analysis\data\session_Control4thRun2\trajectories\with_gaps_csv\trajectories.csv", 
-            r"C:\Users\lachl\OneDrive\Thesis\Collaboration\Analysis\data\session_Control4thRun3\trajectories\with_gaps_csv\trajectories.csv"]
+controls = [r"data\session_Control4thRun1\trajectories\with_gaps_csv\trajectories.csv", 
+            r"data\session_Control4thRun2\trajectories\with_gaps_csv\trajectories.csv", 
+            r"data\session_Control4thRun3\trajectories\with_gaps_csv\trajectories.csv"]
 
-treatment = [r"C:\Users\lachl\OneDrive\Thesis\Collaboration\Analysis\data\session_Treatment4thRun1\trajectories\with_gaps_csv\trajectories.csv", 
-             r"C:\Users\lachl\OneDrive\Thesis\Collaboration\Analysis\data\session_Treatment4thRun2\trajectories\with_gaps_csv\trajectories.csv", 
-             r"C:\Users\lachl\OneDrive\Thesis\Collaboration\Analysis\data\session_Treatment4thRun3\trajectories\with_gaps_csv\trajectories.csv"]
+treatment = [r"data\session_Treatment4thRun1\trajectories\with_gaps_csv\trajectories.csv", 
+             r"data\session_Treatment4thRun2\trajectories\with_gaps_csv\trajectories.csv", 
+             r"data\session_Treatment4thRun3\trajectories\with_gaps_csv\trajectories.csv"]
 
 
 def calculate_velocity_and_length(filename):
