@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-
+#Path to control and treatment trajectory files 
 controls = [r"C:\Users\lachl\OneDrive\Thesis\Collaboration\Analysis\data\session_Control4thRun1\trajectories\with_gaps_csv\trajectories.csv", 
             r"C:\Users\lachl\OneDrive\Thesis\Collaboration\Analysis\data\session_Control4thRun2\trajectories\with_gaps_csv\trajectories.csv", 
             r"C:\Users\lachl\OneDrive\Thesis\Collaboration\Analysis\data\session_Control4thRun3\trajectories\with_gaps_csv\trajectories.csv"]
@@ -52,12 +52,13 @@ def calculate_velocity_and_length(filename):
     
     return results
 
-# Example usage
+#Create dictionary for control results 
 control_dict = {}
 for i, file in enumerate(controls):
     control_dict[f'Control_{i}'] = calculate_velocity_and_length(file)
 
 
+#Create dictionary for treatment dictionary. 
 treatment_dict = {}
 for i, file in enumerate(treatment): 
     treatment_dict[f'Treatment_{i}'] = calculate_velocity_and_length(file)
